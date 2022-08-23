@@ -1,0 +1,46 @@
+.form-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-elements{
+    position: relative;
+flex-direction: column;
+justify-content: center;
+background-image: url("/home/michael/repos/Sign-Up-Form/photo-1553434320-e9f5757140b1.avif");
+background-size: cover;
+width: 40%;
+height: 100vh;
+}
+
+.logo-bar{
+position: absolute;
+top: 30%;
+height: 100px;
+width: 100%;
+
+background-color: rgba(186, 176, 176, 0.475)
+}
+
+.logo{
+font-size: 40px;
+line-height: 1px;
+}
+
+.form input{
+display: grid;
+grid-template-columns: 1fr 1fr ;    
+}
+
+.form-elements{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 246, 246);
+    width: 60%;
+}
+
+.form-header{
+background-color: rgba(167, 159, 159, 0.859);
+height: 20vh;
+width: 100%;
+}
