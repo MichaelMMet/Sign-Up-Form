@@ -7,43 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="form-container">
         <div class="left-elements">
-            <div class = "img-container">
+            <div class="img-container">
                 <img src="" alt="">
             </div>
-            <div class = "logo-bar">
-                <p class = "logo">Placeholder
+            <div class="logo-bar">
+                <p class="logo">Placeholder
                 </p>
             </div>
-            
+
         </div>
 
-        <div class ="form-elements">
-            <div class = "form-header">
+        <div class="form-elements">
+            <div class="form-header">
                 <h1>BlahBlahsaksdaiosa</h1>
-                <p class = "intro">placeholder tetetgatasuydsguyfdguysafguysgfuyiasgufyiagsuf
+                <p class="intro">placeholder tetetgatasuydsguyfdguysafguysgfuyiasgufyiagsuf
                     dfsoijfhiuosadfhiousdhfiopusahofisahopifhosadf
                     niusdaiuf
                 </p>
             </div>
             <form action="" method="get" class="form">
-                <label for="first-name">First Name:</label>
-                <input type="text" id ="first-name" name ="first-name">
+                <div class="left-form-elements">
+                    <div class="input-container">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
 
-                <label for ="first-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name">
+                    <div class="input-container">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="myemail@gmail.com">
+                    </div>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                    <div class="input-container">
+                        <label for="password">Password:</label>
+                        <input type="password" name ="password" id = "password">
+                    </div>
 
-                <label for="phone-number">Phone Number</label>
-                <input type="tel" name ="phone-number" id ="phone-number">
+                </div>
 
+                <div class = "right-form-elements">
+                    <div class="input-container">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="(xxx) xxx-xxxx">
+                    </div>
+<div class="input-container">
+    
+                        <label for="password-confirm">Confirm Password:</label>
+                        <input type="password" name="password-confirm" id="password-confirm">
+</div>
+                </div>
 
             </form>
         </div>
