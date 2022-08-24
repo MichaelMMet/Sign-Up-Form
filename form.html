@@ -7,13 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/62fde95db0.js" crossorigin="anonymous"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -24,7 +33,7 @@
                 <img src="" alt="">
             </div>
             <div class="logo-bar">
-                <p class="logo">Placeholder
+                <p class="logo">Hop into an Adventure!
                 </p>
             </div>
 
@@ -32,47 +41,61 @@
 
         <div class="form-elements">
             <div class="form-header">
-                <h1>BlahBlahsaksdaiosa</h1>
-                <p class="intro">placeholder tetetgatasuydsguyfdguysafguysgfuyiasgufyiagsuf
-                    dfsoijfhiuosadfhiousdhfiopusahofisahopifhosadf
-                    niusdaiuf
+                <h1>Take a step into adventure!</h1>
+                <p class="intro">Ready to embark on an epic quest to submit this form
+                    and give me you information? If so then take up your mouse and keyboard and plung into 
+                    the dephts of the form below!
                 </p>
             </div>
-            <form action="" method="get" class="form">
-                <div class="left-form-elements">
-                    <div class="input-container">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" name="first-name">
+            <div class="main-form">
+                <form action="" method="get" class="form">
+                    <div class="left-form-elements">
+                        <div class="input-container">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="myemail@gmail.com">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                                placeholder="Great_Password17">
+                        </div>
+                        <div class="reqs">
+                            <ul>
+                                <li>At least 8 characters</li>
+                                <li>Acter</li>
+                            </ul>
+                        </div>
+
                     </div>
 
-                    <div class="input-container">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="myemail@gmail.com">
-                    </div>
+                    <div class="right-form-elements">
+                        <div class="input-container">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
 
-                    <div class="input-container">
-                        <label for="password">Password:</label>
-                        <input type="password" name ="password" id = "password">
-                    </div>
+                        <div class="input-container">
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="tel" name="phone-number" id="phone-number" placeholder="(xxx) xxx-xxxx">
+                        </div>
+                        <div class="input-container">
 
-                </div>
-
-                <div class = "right-form-elements">
-                    <div class="input-container">
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" name="last-name" id="last-name">
+                            <label for="password-confirm">Confirm Password:</label>
+                            <input type="password" name="password-confirm" id="password-confirm">
+                        </div>
                     </div>
+            </div>
+            <div class="submit-section">
+                <button type="submit">Begin Quest</button>
 
-                    <div class="input-container">
-                        <label for="phone-number">Phone Number:</label>
-                        <input type="tel" name="phone-number" id="phone-number" placeholder="(xxx) xxx-xxxx">
-                    </div>
-<div class="input-container">
-    
-                        <label for="password-confirm">Confirm Password:</label>
-                        <input type="password" name="password-confirm" id="password-confirm">
-</div>
-                </div>
+            </div>
 
             </form>
         </div>

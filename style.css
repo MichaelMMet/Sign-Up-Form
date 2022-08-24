@@ -1,67 +1,109 @@
-.form-container{
+@font-face {
+    font-family: "magic-font";
+    src: url("/home/michael/repos/Sign-Up-Form/fonts/Magic Retro.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa-swords{
+    width: 100px;
+    height: 100px;
+}
+
+h1 + .intro{
+    font-family: 'Oswald', sans-serif;
+
+}
+
+h1{
+    margin: 10px;
+}
+
+.intro{
+width: 400px;
+margin-left:30px;
+}
+
+.form-container {
     display: flex;
     flex-direction: row;
 }
 
-.left-elements{
+.left-elements {
     position: relative;
-flex-direction: column;
-justify-content: center;
-background-image: url("/home/michael/repos/Sign-Up-Form/photo-1553434320-e9f5757140b1.avif");
-background-size: cover;
-width: 40%;
-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/home/michael/repos/Sign-Up-Form/photo-1553434320-e9f5757140b1.avif");
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
 }
 
-.logo-bar{
-position: absolute;
-top: 30%;
-height: 100px;
-width: 100%;
+.logo-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    height: 100px;
+    width: 100%;
 
-background-color: rgba(186, 176, 176, 0.475)
+    background-color: rgba(186, 176, 176, 0.475)
 }
 
-.logo{
-font-size: 40px;
-line-height: 1px;
+.logo {
+
+    font-family: "magic-font", sans-serif;
+    font-size: 30px;
+    line-height: 1px;
 }
 
-.form{
+.form {
     font-family: 'Oswald', sans-serif;
+    position: relative;
 
-display: flex;
-flex-direction: row;
-justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
-height: 35vh;
-margin: 10px;
-gap: 20px;
+    height: 45vh;
+    margin: 10px;
+    gap: 20px;
+    box-shadow: 2px 2px 5px gray;
 }
 
-.form-elements{
+.form-elements {
     display: flex;
     flex-direction: column;
     background-color: rgb(246, 246, 246);
+
     width: 60%;
 }
 
-.form-header{
-background-color: rgba(167, 159, 159, 0.859);
-height: 25vh;
-width: 100%;
+.form-header {
+
+
+    background-color: rgba(167, 158, 158, 0.563);
+    height: 25vh;
+    width: 100%;
 }
 
-.left-form-elements{
+.left-form-elements {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
-.right-form-elements{
+.right-form-elements {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
 }
 
 /*
@@ -72,29 +114,70 @@ width: 100%;
 }
 */
 
-label{
+.reqs {
+    position: absolute;
+}
+
+ul {
+    position: absolute;
+    top: 17vh;
+}
+li{
+    font-size: 14px;
+}
+
+.submit-section {
+    background-color: white;
+    height: 40vh;
+}
+
+
+label {
     margin-bottom: 2px;
     width: 150px;
     display: inline-block
 }
 
-input{
+input {
     padding: 3px;
     width: 250px;
     font-family: 'Oswald', sans-serif;
 
 }
 
-input:invalid{
+button{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background-color: rgba(149, 187, 192, 1);
+
+    border: none;
+    margin-top:10px ;
+    margin-left: 30px;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+button:hover{
+    background-color: rgba(139, 177, 182, 1);
+    box-shadow: 2px 2px 2px gray;
+}
+
+button:active{
+    background-color: rgba(119, 157, 172, 1);
+    box-shadow: 4px 4px 4px gray;
+}
+
+input:invalid {
     border: 2px solid rgb(208, 48, 48);
     box-shadow: none;
 }
 
-input:focus{
-box-shadow: 5px 2px 10px #888888;
-border: 2px solid black;
+input:valid {}
+
+input:focus {
+    box-shadow: 5px 2px 10px #888888;
+    border: 2px solid black;
 }
-
-
-
-
