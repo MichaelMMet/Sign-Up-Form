@@ -5,9 +5,17 @@
     font-style: normal;
 }
 
+/*
 .fa-swords{
     width: 100px;
     height: 100px;
+}
+*/
+
+
+.sword-image{
+    height: 100px;
+    width: 100px;
 }
 
 h1 + .intro{
