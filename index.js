@@ -4,6 +4,8 @@ const length = document.querySelector(".passLength");
 const num = document.querySelector(".num");
 const uppercase = document.querySelector(".capital");
 const special = document.querySelector(".specialChar");
+const confirmPassReq = document.querySelector(".passwordCheck");
+const confirmedPassword = document.querySelector(".password-confirm");
 
 myInput.onfocus = function () {
     document.querySelector(".reqs").style.display = "block";
@@ -56,6 +58,28 @@ myInput.onkeyup = function () {
     } else {
         special.style.color = "red";
     }
+    console.log(myInput.value);
+
+    //validate confirm password
+    if(myInput.value == confirmedPassword.value){
+        confirmPassReq.style.color = "green";
+    } else {
+        confirmPassReq.style.color = "red";
+    }
+    console.log(confirmedPassword.value);
+
+}
+
+
+confirmedPassword.onkeyup = function(){
+
+    //validate confirm password
+    if(myInput.value == confirmedPassword.value){
+        confirmPassReq.style.color = "green";
+    } else {
+        confirmPassReq.style.color = "red";
+    }
+    console.log(confirmedPassword.value);
 
 
 }

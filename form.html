@@ -77,7 +77,7 @@
 
                     <div>
                         <label for="password-confirm">Confirm Password:</label>
-                        <input type="password" name="password-confirm" id="password-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                        <input type="password" class = "password-confirm" name="password-confirm" id="password-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                         placeholder="Great_Password17">
                     </div>
                     <div class = "reqs">
@@ -88,6 +88,9 @@
                             <li class = "specialChar">One special character</li>
                             <li class = "num">At least one number</li>
                         </ul>
+                    </div>
+                    <div>
+                        <p class ="passwordCheck">Passwords much match</p>
                     </div>
 
             </div>

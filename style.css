@@ -146,6 +146,7 @@ ul {
 }
 li{
     font-size: 14px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .submit-section {
@@ -197,14 +198,8 @@ input:invalid {
     box-shadow: none;
 }
 
-input:valid {}
-
-li:valid{
-    color: green;  
-}
-
-li:invalid{
-    color: red;
+.passwordCheck{
+    font-family: 'Oswald', sans-serif;
 }
 
 input:focus {
