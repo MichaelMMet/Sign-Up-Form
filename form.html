@@ -50,43 +50,44 @@
             </div>
             <div class="main-form">
                 <form action="" method="get" class="form">
-                    <div class="left-form-elements">
-                        <div class="input-container">
-                            <label for="first-name">First Name:</label>
-                            <input type="text" id="first-name" name="first-name">
-                        </div>
+                    <div>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div>
 
-                        <div class="input-container">
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" placeholder="myemail@gmail.com">
-                        </div>
-
-                        <div class="input-container">
-                            <label for="password">Password:</label>
-                            <input type="password" name="password" id="password"
-                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                                placeholder="Great_Password17">
-                        </div>
-
-
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="myemail@gmail.com">
+                    </div>
+                    <div>
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="(xxx) xxx-xxxx">
                     </div>
 
-                    <div class="right-form-elements">
-                        <div class="input-container">
-                            <label for="last-name">Last Name:</label>
-                            <input type="text" name="last-name" id="last-name">
-                        </div>
-
-                        <div class="input-container">
-                            <label for="phone-number">Phone Number:</label>
-                            <input type="tel" name="phone-number" id="phone-number" placeholder="(xxx) xxx-xxxx">
-                        </div>
-                        <div class="input-container">
-
-                            <label for="password-confirm">Confirm Password:</label>
-                            <input type="password" name="password-confirm" id="password-confirm">
-                        </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                            placeholder="Great_Password17">
                     </div>
+
+                    <div>
+                        <label for="password-confirm">Confirm Password:</label>
+                        <input type="password" name="password-confirm" id="password-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                        placeholder="Great_Password17">
+                    </div>
+                    <div>
+                        <ul>
+                            <li>At least 8 caharacters long</li>
+                            <li>At least one capital and one lowercase letter</li>
+                            <li>One special character</li>
+                        </ul>
+                    </div>
+
             </div>
             <div class="submit-section">
                 <button type="submit">Begin Quest</button>
