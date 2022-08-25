@@ -177,6 +177,10 @@ input:focus {
     border: 2px solid black;
 }
 
+input:not(:placeholder-shown):not(:focus):invalid {
+    border: 2px solid rgb(208, 48, 48);
+  }
+
 @media all and (max-width: 1000px){
 .logo-bar{
     display: flex;
