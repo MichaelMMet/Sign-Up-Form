@@ -70,7 +70,7 @@
 
                     <div>
                         <label for="password">Password:</label>
-                        <input type="password" name="password" id="password"
+                        <input type="password" class ="password" name="password" id="password"
                             pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                             placeholder="Great_Password17">
                     </div>
@@ -80,11 +80,13 @@
                         <input type="password" name="password-confirm" id="password-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                         placeholder="Great_Password17">
                     </div>
-                    <div>
+                    <div class = "reqs">
                         <ul>
-                            <li>At least 8 caharacters long</li>
-                            <li>At least one capital and one lowercase letter</li>
-                            <li>One special character</li>
+                            <li class ="passLength">At least 8 caharacters long</li>
+                            <li class = "capital">At least one capital letter</li>
+                            <li class = "lowercase">At least one lowwercase letter</li>
+                            <li class = "specialChar">One special character</li>
+                            <li class = "num">At least one number</li>
                         </ul>
                     </div>
 
@@ -99,6 +101,7 @@
 
 
     </div>
+    <script src = "index.js"></script>
 </body>
 
 </html>
